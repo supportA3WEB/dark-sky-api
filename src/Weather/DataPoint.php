@@ -319,7 +319,27 @@ class DataPoint
     {
         return array_get($this->point, 'temperatureHigh');
     }
+    
+    /**
+     * The daytime high temperature; only on "daily".
+     *
+     * @return float|null
+     */
+    public function temperatureMax()
+    {
+        return array_get($this->point, 'temperatureMax');
+    }
 
+    /**
+     * The daytime high temperature; only on "daily".
+     *
+     * @return float|null
+     */
+    public function temperatureMin()
+    {
+        return array_get($this->point, 'temperatureMin');
+    }
+    
     /**
      * The UNIX time representing when the daytime high temperature occurs; only on "daily".
      *
