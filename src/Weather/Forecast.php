@@ -74,7 +74,27 @@ class Forecast
     {
         return array_get($this->data, 'timezone');
     }
+    
+    /**
+     * The daytime high temperature; only on "daily".
+     *
+     * @return float|null
+     */
+    public function temperatureMax()
+    {
+        return array_get($this->point, 'temperatureMax');
+    }
 
+    /**
+     * The daytime high temperature; only on "daily".
+     *
+     * @return float|null
+     */
+    public function temperatureMin()
+    {
+        return array_get($this->point, 'temperatureMin');
+    }
+    
     /**
      * A data point containing the current weather conditions at the requested location.
      *
