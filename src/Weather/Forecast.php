@@ -82,7 +82,7 @@ class Forecast
      */
     public function temperatureMax()
     {
-        return array_get($this->point, 'temperatureMax');
+        return array_get($this->data, 'temperatureMax');
     }
 
     /**
@@ -92,7 +92,7 @@ class Forecast
      */
     public function temperatureMin()
     {
-        return array_get($this->point, 'temperatureMin');
+        return array_get($this->data, 'temperatureMin');
     }
     
     /**
